@@ -1,0 +1,39 @@
+Project Title: Personal Blog Website Deployment on OpenShift
+
+Description:
+In this project, we will deploy a personal blog website using OpenShift, a powerful platform for container orchestration and deployment. We'll set up a simple blog application, manage its configuration, and ensure secure handling of sensitive information. To make things relatable, let's imagine you're a budding writer who wants to share your stories and thoughts with the world through your own blog.
+
+Deployments:
+Think of a deployment as setting up your blog to be accessible online. Just like you'd publish your writing for others to read, a deployment in OpenShift ensures your blog is always available and up-to-date. If you make changes or add new posts, OpenShift takes care of updating the live version of your blog.
+
+Service:
+A service is like the front door to your blog. It's how readers find your posts and interact with your site. Imagine your blog having a friendly receptionist who guides visitors to the right pages and ensures they have a smooth experience.
+
+Routes:
+Routes are like the addresses to reach your blog. Just as you share your home address with friends, a route in OpenShift gives your blog a unique web address (URL) that people can use to access your writing. It's how readers can find your blog on the vast internet.
+
+ConfigMaps:
+ConfigMaps are like personal preferences for your blog. They allow you to customize how your blog looks and behaves. Imagine you want to change the color scheme or the font style of your blog – ConfigMaps let you do that without changing the underlying content.
+
+Secrets:
+Secrets are like your diary's lock and key. They help you keep sensitive information safe, like login credentials to access your blog's admin panel or any other confidential data. Just as you wouldn't want anyone to read your private thoughts, Secrets ensure that only authorized users can access certain parts of your blog.
+
+Example Scenario:
+Let's say you're a writer named Alex, and you've created a personal blog using a popular blogging platform. However, you want more control and flexibility over how your blog looks and behaves. You decide to deploy your blog on OpenShift.
+
+1. **Deployments:** You set up a deployment on OpenShift for your blog. This deployment takes your blog's code, configures it, and ensures it's always accessible online, even when you make updates or add new posts.
+
+2. **Service:** You create a service that acts like a receptionist for your blog. It directs visitors to the right pages and ensures they can read your posts, leave comments, and navigate easily.
+
+3. **Routes:** With a route, you give your blog a unique web address (URL) like www.alexswriting.com. This way, readers can find your blog by typing the URL into their web browsers.
+
+4. **ConfigMaps:** Using ConfigMaps, you customize your blog's appearance and behavior. You change the background color, adjust the layout, and even add a special section for your favorite quotes.
+
+5. **Secrets:** To protect your admin panel and other sensitive parts of your blog, you create Secrets. These Secrets store your login information securely, ensuring only you can access and manage your blog's settings.
+
+By setting up this project, you've taken your writing passion to the next level, turning your personal blog into a well-managed, customizable, and secure online space for readers to enjoy your stories and ideas.
+
+
+not able to give the container-image-name (reason image are laying in my local not in docker hub so need to push that image to docker hub)
+
+ 

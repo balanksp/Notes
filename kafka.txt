@@ -3,9 +3,13 @@
 Event-driven architecture (EDA) is a software design pattern in which decoupled applications can asynchronously publish and subscribe to events via an event broker/message broker.Event-driven App can be created in any kind of  programming language , it is a programming approach , not a programming language.
 Event-Driven Architecture, applications communicate with each other by sending and/or receiving events or messages.
 
-Topics
--------
-topic is a category or feed name to which messages are published.it represent particular stream of data.
+kafka cluster
+-------------
+kafka is a distributed system,it is act like a cluster.A kafka cluster consists of a set of brokers.A cluster has minimum 3 brokers.
+
+Brokers
+--------
+the broker is a Kafka server.it just give the meaningfull name to kafka server.And this name make sense as well as all the kafka does it act as a message broker in between producer & consumer.they not interact directly. they use as a broker to exchange the messages.
 
 producers
 -----------
@@ -15,33 +19,40 @@ consumers
 ----------
 Consumers are entity that subscribe to kafka topics and read the message from them.they read the messages from them.they read the message from the pull-based manner, specfiy the topics & partition from which they want to consume .each consumer message keep on tracking , progress in reading messages by maintaining an offset,indicate the last reading message in each partition.
 
+Topics
+-------
+topic is a category or feed name to which messages are published.it represent particular stream of data.
+we will send java Object as a JSON byte[] to kafka topic using JsonSerializer. as receiving JSON byte[] automatically convert to java Object using JsonDeserializer.
+
 Partitions
 -----------
-  A topic is divided into one or more partitions.each partitions had in ordered,immutable sequence of message .partitions allow kafka to parallelize data storage & processing.they scalable and fault tolerance of kafka distributing the load across multiple brokers.
+  A topic is divided into one or more partitions.each partitions had in ordered,immutable sequence of message. partitions allow kafka to parallelize data storage & processing.they scalable and fault tolerance of kafka distributing the load across multiple brokers.
 
-Brokers
---------
-A kafka consist of one or more brokers.
-
-consumers groups
-----------------
-Consumer groups allow parallel consumption of messages from a topic. Consumers within a group divide the partitions of a topic among themselves, ensuring that each partition is consumed by only one consumer within the group. This enables horizontal scaling of consumer applications.
+Kafka topic divided into a number of partitions,which contain records in an unchangeable sequence. kafka broker store the message for a topic. But the capacity of data can be huge & may not possible to store in single computer.therefore it will partitions into multiple parta & distributed among multiple computers, since kafka is a distributed system.
 
 offsets
 --------
 Offsets are numeric identifiers that kafka assigns to each message within a partition.they repersent the position of the message within the partition's sequence.consumers use the offsets to keep tracking of their progress and can rewind or skip to a specific offset for message retrieval.
 
+offset is a sequence of id's given message when arrive to a partition. once offset is assigned it never to be changed. the first message gets on an zero & next message receives an offset one & so on so.
+
+consumers groups
+----------------
+Consumer groups allow parallel consumption of messages from a topic. Consumers within a group divide the partitions of a topic among themselves, ensuring that each partition is consumed by only one consumer within the group. This enables horizontal scaling of consumer applications.
+
+A comsumer group contains one & more consumers working together to process the messages.
+
 Replication
 -----------
 Each partition can have multiple replicas, where one replica acts as the leader and others act as followers. The leader handles read and write requests, while followers replicate the leader's data and serve as backups. If a leader fails, one of the followers is automatically elected as the new leader.
 
-	   hierarchy arch
+ hierarchy arch
 		1.Cluster
-                2.Brokers
-		3.Topics
-		4.Partitions
-		5.OffSets
-		6.Messages/Events
+               		 2.Brokers
+				3.Topics
+				       4.Partitions
+						  5.OffSets
+							 6.Messages/Events
 features
 ---------
 Performance , durability,Zero Downtime,Replication,extensibility,

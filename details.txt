@@ -22,3 +22,8 @@ Angular  ====> Basic
 working on orderservice,providerService,VendorService,DeleiveryService & paymentService
 
 
+npx expo --version
+npm -v
+nvm -v
+node -v
+

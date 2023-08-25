@@ -7,6 +7,7 @@ it is used for based on the project object Model.
 
 Maven commands
 ==============
+mvn dependency:tree
 
 mvn clean 
 		this command delete any previous genrated file from previous build. 
