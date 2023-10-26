@@ -27,3 +27,7 @@ npm -v
 nvm -v
 node -v
 
+zoom meeting link
+-----------------
+https://us06web.zoom.us/j/9804126806?pwd=dmhvZ2d3R0t1dWVnSXFGYjJJeVd4Zz09
+

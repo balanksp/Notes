@@ -215,7 +215,41 @@ pm.expect(pm.response.responseTime).to.below(150);
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+HTTP status codes are standardized numeric codes that indicate the outcome of an HTTP request made by a client to a server. They provide information about whether the request was successful, redirected, encountered an error, and more. Here's a list of some important HTTP status codes, along with their corresponding meanings and common scenarios in which they occur:
 
+1xx Informational Responses:
+
+100 Continue: The server has received the initial part of the request and is indicating that the client should proceed with sending the rest of the request.
+2xx Successful Responses:
+
+200 OK: The request was successful. This is the most common status code for successful requests.
+201 Created: The request resulted in a new resource being successfully created.
+204 No Content: The request was successful, but there is no response body to send back.
+3xx Redirection Responses:
+
+301 Moved Permanently: The requested resource has been permanently moved to a different location.
+302 Found (or Moved Temporarily): The requested resource is temporarily located at a different URL.
+304 Not Modified: The client's cached copy is still valid, so the server responds with no content.
+4xx Client Error Responses:
+
+400 Bad Request: The server cannot understand the request due to a client error, often due to malformed syntax.
+401 Unauthorized: The client must authenticate itself to get the requested response, typically through login credentials.
+403 Forbidden: The client does not have permission to access the requested resource.
+404 Not Found: The server cannot find the requested resource.
+5xx Server Error Responses:
+
+500 Internal Server Error: A generic error message indicating that the server encountered an unexpected condition that prevented it from fulfilling the request.
+501 Not Implemented: The server does not support the functionality required to fulfill the request.
+502 Bad Gateway: The server, while acting as a gateway or proxy, received an invalid response from the upstream server.
+503 Service Unavailable: The server is currently unable to handle the request due to temporary overloading or maintenance of the server.
+These are just a few examples of HTTP status codes and their meanings. They help the client understand the result of their request and guide them on how to proceed.
+
+In addition to status codes, including meaningful response messages can provide more context to clients about what went wrong or what was successful. For example:
+
+When sending a 400 Bad Request, you might include a message explaining what was wrong with the client's request.
+When sending a 401 Unauthorized, you might include a message indicating that authentication is required.
+When sending a 500 Internal Server Error, you might include a message acknowledging the error and suggesting the user try again later.
+Combining appropriate status codes and informative response messages helps create a better user experience by providing clear communication between the server and the client.
 
 
 

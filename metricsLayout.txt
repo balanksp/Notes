@@ -1,0 +1,46 @@
+
+import React from "react";
+import { Responsive, WidthProvider } from "react-grid-layout";
+
+const ResponsiveGridLayout = WidthProvider(Responsive);
+
+  function MetricLayout() {
+    const layout = [
+        { i: "a", x: 0, y: 0, w: 1, h: 2, static: true },   // 7th [4, 3, 2, 5]
+        { i: "b", x: 1, y: 0, w: 3, h: 2, minW: 2, maxW: 4 },
+        { i: "c", x: 4, y: 0, w: 1, h: 2 }
+      ];
+
+      const layoutStyle = {
+        backgroundColor: "#ccc",
+        border: "1px solid black",
+        fontSize: "24px",
+        textAlign: "center",
+        // position: "absolute",
+        // top: 0,
+        // bottom: 0,
+        // left: 0,
+        // right: 0,
+        // margin: "auto",
+        // height: "24px"  
+      };
+
+  return (
+    <ResponsiveGridLayout
+      style={layoutStyle}
+      className="layout"
+      layouts={layout}
+      breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
+      cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
+    >
+      <div  style={layoutStyle} key="1">1</div>
+      <div  style={layoutStyle} key="2">2</div>
+      <div  style={layoutStyle} key="3">3</div>
+      <div  style={layoutStyle} key="4">4</div>
+      <div  style={layoutStyle} key="5">5</div>
+    </ResponsiveGridLayout>
+  );
+}
+
+// export default {getLayoutsFromSomewhere,MetricLayout};
+export default MetricLayout

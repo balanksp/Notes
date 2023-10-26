@@ -18,6 +18,13 @@ ConfigMaps are like personal preferences for your blog. They allow you to custom
 Secrets:
 Secrets are like your diary's lock and key. They help you keep sensitive information safe, like login credentials to access your blog's admin panel or any other confidential data. Just as you wouldn't want anyone to read your private thoughts, Secrets ensure that only authorized users can access certain parts of your blog.
 
+containers 
+pods
+Deployments configs
+Build
+Build configs
+Image Streams
+
 Example Scenario:
 Let's say you're a writer named Alex, and you've created a personal blog using a popular blogging platform. However, you want more control and flexibility over how your blog looks and behaves. You decide to deploy your blog on OpenShift.
 
@@ -36,4 +43,14 @@ By setting up this project, you've taken your writing passion to the next level,
 
 not able to give the container-image-name (reason image are laying in my local not in docker hub so need to push that image to docker hub)
 
+
+Build Strategies
+----------------
+source - to - Image
+Docker-Build
+
+web console overview
+--------------------
+- install App from Github
+- install App from DockerHub
  
