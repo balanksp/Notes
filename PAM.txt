@@ -96,9 +96,13 @@ RHPAM is a proven approach that has been used by organizations around the world 
 
 
 
+docker pull jbpm-server-full
+docker run -p 8080:8080 -p 8001:8001 -d --name jbpm-server-full jboss/jbpm-server-full:latest
 
+docker start jbpm-server-full
 
-
+docker ps - it shown the running images 
+docker ps -a - it shown all the images 
 
 
 

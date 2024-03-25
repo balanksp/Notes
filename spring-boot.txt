@@ -90,14 +90,14 @@ java<-----------------JPA api------------>database
 when return from the DataBase it should be in model object
 
 
-------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 REST API'S
 
 what is api (Application Programming Interface) => example for API'S facebook , twitter , instagram icons used in other webpages
 
 
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 B2 Channels topics
 ------------------
 1. creating SpringBoot project
@@ -269,6 +269,12 @@ https://www.upgrad.com/blog/spring-boot-interview-questions-and-answers-beginner
 5. What is the procedure for creating a non-web application in Spring Boot?
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  interview question asked in tech Mango
+--------------------------------------------
+1. Java, Oops, Generics, Spring Boot, Hibernate, Spring Security, Microservices, REST.
+2. BPMN, JBPM.
+3. Mysql & Mongo.
+4. AWS, Caching, Exception handling, Debugging, reverse engineering.
 
 
 

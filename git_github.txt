@@ -64,7 +64,11 @@ git remote -v 					     ==> this command is used to check the current url repo.
 
 git clone <repo url>   					==> what the existing codes are downloaded.
 
-git add <.\filename> 					==> track the particular file only for any changes or push or pull..
+git add <filename> 					==> track the particular file only for any changes or push or pull..
+
+git add .					==> If you only want to stage modifications and new files in the current directory (excluding deletions and ignored files)
+
+git add -A					==>  if you want to stage all changes, including modifications, deletions, and new files, and you want to make sure to include everything
 
 git status 							==> commit,push and pull details shown.
 
@@ -74,7 +78,7 @@ git commit -am "message"
 
 git push  							==> upload the file to golobal repo.
 
-git pull  							==> download the file to local repo.
+git pull  							==> import the updated file to local.
 
 git fetch  ==>  Retrieves the latest changes from a remote repository without merging them into your local branches automatically.
 
@@ -129,7 +133,7 @@ notes :-
 
 	   *3-way merge had conflict. because both branch parallel changes doing , so when merge to master conflict occur.
 
-git merge 	<branch name>			              => merge the from current branch to specified branch
+git merge 	<branch name>			              => When you have parallel development in different branches and want to bring the changes made in one branch (main) into another
 
 git remote 						      => show the list of url remote repo.
 
@@ -138,8 +142,8 @@ git diff commands
 ------------------
 
 
------------> working Directory -----------------> Staging -------------------> Local Repository
-		 ( or work space)				(git add .)			    (local m/c)	
+-----------> working Directory -------------------------> Staging ---------------------------------------------> Local Repository
+    (where you modify files)   (where you prepare changes for commit [git add .])		(where changes are saved with a commit in local m/c)	
 
 
 git log --oneline			 	       ==> this command used for show all commits in the branch									

@@ -1,0 +1,16 @@
+kepler
+
+microShift 
+
+kepler(Prometheus metrics) ======> opentelemetery collector --------> recevier 
+					|
+					|
+					 ________> exporter (otlp)
+
+openshift 
+
+collector ====> recevier ----> exporter -----> Prometheus metrics   ----> Grafana
+
+
+
+

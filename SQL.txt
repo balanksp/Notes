@@ -1,3 +1,5 @@
+postgresql password:  root
+
 SQL(Structured Querey Language)
 -----------------------
 what is data ?

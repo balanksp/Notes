@@ -53,4 +53,26 @@ web console overview
 --------------------
 - install App from Github
 - install App from DockerHub
+
+
+application deployment steps:- 
+-------------------------------
+npm run build --prod
+docker build -t bala101/observai-frontend:latest .
+docker push bala101/observai-frontend:latest
+
+in openShift
+docker.io/bala101/observai-frontend
+observai-ui-insecure
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
  

@@ -96,3 +96,18 @@ need to see all message from the beginning
 office Automation
 ------------------
 notepad ./drivers/etc/hosts
+
+
+
+=================================================================Projects (obsev & sustanbility)=========================================================================================
+
+oc login -u balasubramanian -p Bala@2509$ --server https://api.zagaopenshift.zagaopensource.com:6443
+
+oc project kafka-workspace
+
+oc extract secret/observai-kafka-cluster-cluster-ca-cert --keys=ca.crt --to=- > observai-kafka-cluster.crt
+
+keytool -import -trustcacerts -alias root -file observai-kafka-cluster.crt -keystore observai-kafka-cluster.jks -storepass password -noprompt
+
+
+bin\windows\kafka-console-consumer.bat --bootstrap-server observai-kafka-cluster-kafka-external-bootstrap-kafka-workspace.apps.zagaopenshift.zagaopensource.com:443 --consumer-property security.protocol=SSL --consumer-property ssl.truststore.password=password --consumer-property ssl.truststore.location=./observai-kafka-cluster.jks --topic observai-main-metrics-1

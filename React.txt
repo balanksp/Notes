@@ -15,6 +15,7 @@ class component , functional component
 
 state management 
 
+hooks , props ,
 
  Serving!                               
    │                                          

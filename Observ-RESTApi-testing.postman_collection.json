@@ -1,0 +1,872 @@
+{
+	"info": {
+		"_postman_id": "61815586-e976-4403-816f-ef473d4da811",
+		"name": "Observ-RESTApi-testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28110854",
+		"_collection_link": "https://bold-star-264017.postman.co/workspace/New-Team-Workspace~b681cfeb-46a7-4117-bf92-2108c2b50772/collection/28110854-61815586-e976-4403-816f-ef473d4da811?action=share&source=collection_link&creator=28110854"
+	},
+	"item": [
+		{
+			"name": "Dashboard",
+			"item": [
+				{
+					"name": "trace summery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/traces/TraceSumaryChartDataCount?from=2024-01-01&serviceNameList=order-srv-1&serviceNameList=vendor-srv-1&serviceNameList=vendor-srv-2&serviceNameList=kafka-srv-5&serviceNameList=vendor-srv-4&serviceNameList=vendor-srv-3&to=2024-01-22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"traces",
+								"TraceSumaryChartDataCount"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "order-srv-1"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-1"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-2"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "kafka-srv-5"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-4"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-3"
+								},
+								{
+									"key": "to",
+									"value": "2024-01-22"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "trace peak latency",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/traces/TraceSumaryChartPeaKLatencyCount?from=2024-01-01&maxpeakLatency=500&minpeakLatency=1&serviceNameList=order-srv-1&serviceNameList=vendor-srv-1&serviceNameList=vendor-srv-2&serviceNameList=kafka-srv-5&serviceNameList=vendor-srv-4&serviceNameList=vendor-srv-3&to=2024-01-22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"traces",
+								"TraceSumaryChartPeaKLatencyCount"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "maxpeakLatency",
+									"value": "500"
+								},
+								{
+									"key": "minpeakLatency",
+									"value": "1"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "order-srv-1"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-1"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-2"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "kafka-srv-5"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-4"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-3"
+								},
+								{
+									"key": "to",
+									"value": "2024-01-22"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "log summery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/logs/LogSummaryChartDataCount?endDate=2024-01-01&serviceNameList=order-srv-1&serviceNameList=vendor-srv-1&serviceNameList=vendor-srv-2&serviceNameList=kafka-srv-5&serviceNameList=vendor-srv-4&serviceNameList=vendor-srv-3&startDate=2024-01-22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"logs",
+								"LogSummaryChartDataCount"
+							],
+							"query": [
+								{
+									"key": "endDate",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "order-srv-1"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-1"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-2"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "kafka-srv-5"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-4"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-3"
+								},
+								{
+									"key": "startDate",
+									"value": "2024-01-22"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "db summery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/traces/DBSumaryChartDataCount?from=2024-01-01&serviceNameList=order-srv-1&serviceNameList=vendor-srv-1&serviceNameList=vendor-srv-2&serviceNameList=kafka-srv-5&serviceNameList=vendor-srv-4&serviceNameList=vendor-srv-3&to=2024-01-22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"traces",
+								"DBSumaryChartDataCount"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "order-srv-1"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-1"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-2"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "kafka-srv-5"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-4"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-3"
+								},
+								{
+									"key": "to",
+									"value": "2024-01-22"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "db peak latency",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/traces/DBSumaryChartPeakLatencyCount?from=2022-03-10&maxPeakLatency=500&minPeakLatency=0&serviceNameList=order-srv-1&serviceNameList=vendor-srv-1&serviceNameList=vendor-srv-2&serviceNameList=kafka-srv-5&serviceNameList=vendor-srv-4&serviceNameList=vendor-srv-3&to=2024-01-22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"traces",
+								"DBSumaryChartPeakLatencyCount"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2022-03-10"
+								},
+								{
+									"key": "maxPeakLatency",
+									"value": "500"
+								},
+								{
+									"key": "minPeakLatency",
+									"value": "0"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "order-srv-1"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-1"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-2"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "kafka-srv-5"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-4"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-3"
+								},
+								{
+									"key": "to",
+									"value": "2024-01-22"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "kafka summery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/traces/KafkaSumaryChartDataCount?from=2024-01-01&serviceNameList=order-srv-1&serviceNameList=vendor-srv-1&serviceNameList=vendor-srv-2&serviceNameList=kafka-srv-5&serviceNameList=vendor-srv-4&serviceNameList=vendor-srv-3&to=2024-01-22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"traces",
+								"KafkaSumaryChartDataCount"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "order-srv-1"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-1"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-2"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "kafka-srv-5"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-4"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-3"
+								},
+								{
+									"key": "to",
+									"value": "2024-01-22"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "kafka peak latency",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/traces/KafkaSumaryChartPeakLatencyCount?from=2022-03-10&maxPeakLatency=500&minPeakLatency=0&serviceNameList=order-srv-1&serviceNameList=vendor-srv-1&serviceNameList=vendor-srv-2&serviceNameList=kafka-srv-5&serviceNameList=vendor-srv-4&serviceNameList=vendor-srv-3&to=2024-01-22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"traces",
+								"KafkaSumaryChartPeakLatencyCount"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2022-03-10"
+								},
+								{
+									"key": "maxPeakLatency",
+									"value": "500"
+								},
+								{
+									"key": "minPeakLatency",
+									"value": "0"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "order-srv-1"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-1"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-2"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "kafka-srv-5"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-4"
+								},
+								{
+									"key": "serviceNameList",
+									"value": "vendor-srv-3"
+								},
+								{
+									"key": "to",
+									"value": "2024-01-22"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sustainability-kepler-POD",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/kepler/getAllKepler-MetricData?from=2024-01-01&keplerType=CORE&keplerType=UNCORE&keplerType=DRAM&keplerType=TOTAL&keplerType=PKG&keplerType=OTHER&page=1&pageSize=10&to=2024-01-22&type=pod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"kepler",
+								"getAllKepler-MetricData"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "keplerType",
+									"value": "CORE"
+								},
+								{
+									"key": "keplerType",
+									"value": "UNCORE"
+								},
+								{
+									"key": "keplerType",
+									"value": "DRAM"
+								},
+								{
+									"key": "keplerType",
+									"value": "TOTAL"
+								},
+								{
+									"key": "keplerType",
+									"value": "PKG"
+								},
+								{
+									"key": "keplerType",
+									"value": "OTHER"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								},
+								{
+									"key": "to",
+									"value": "2024-01-22"
+								},
+								{
+									"key": "type",
+									"value": "pod"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sustainability-kepler-node",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/kepler/getAllKepler-MetricData?from=2024-01-01&keplerType=CORE&keplerType=UNCORE&keplerType=DRAM&keplerType=TOTAL&keplerType=PKG&keplerType=OTHER&page=1&pageSize=10&to=2024-01-22&type=node",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"kepler",
+								"getAllKepler-MetricData"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "keplerType",
+									"value": "CORE"
+								},
+								{
+									"key": "keplerType",
+									"value": "UNCORE"
+								},
+								{
+									"key": "keplerType",
+									"value": "DRAM"
+								},
+								{
+									"key": "keplerType",
+									"value": "TOTAL"
+								},
+								{
+									"key": "keplerType",
+									"value": "PKG"
+								},
+								{
+									"key": "keplerType",
+									"value": "OTHER"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								},
+								{
+									"key": "to",
+									"value": "2024-01-22"
+								},
+								{
+									"key": "type",
+									"value": "node"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "APM",
+			"item": [
+				{
+					"name": "TRACE",
+					"item": [
+						{
+							"name": "get all sortorder trace",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/traces/getalldata-sortorder?from=2024-01-01&page=1&pageSize=10&serviceNameList=order-srv-1&serviceNameList=vendor-srv-1&serviceNameList=vendor-srv-2&serviceNameList=kafka-srv-5&serviceNameList=vendor-srv-4&serviceNameList=vendor-srv-3&sortOrder=error&to=2024-01-23",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"traces",
+										"getalldata-sortorder"
+									],
+									"query": [
+										{
+											"key": "from",
+											"value": "2024-01-01"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "pageSize",
+											"value": "10"
+										},
+										{
+											"key": "serviceNameList",
+											"value": "order-srv-1"
+										},
+										{
+											"key": "serviceNameList",
+											"value": "vendor-srv-1"
+										},
+										{
+											"key": "serviceNameList",
+											"value": "vendor-srv-2"
+										},
+										{
+											"key": "serviceNameList",
+											"value": "kafka-srv-5"
+										},
+										{
+											"key": "serviceNameList",
+											"value": "vendor-srv-4"
+										},
+										{
+											"key": "serviceNameList",
+											"value": "vendor-srv-3"
+										},
+										{
+											"key": "sortOrder",
+											"value": "error"
+										},
+										{
+											"key": "to",
+											"value": "2024-01-23"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "filter trace",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "view span and view log",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/traces/findByTraceId?traceId=0b1687c8b2c0df7d9ebddaf998bea9df",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"traces",
+										"findByTraceId"
+									],
+									"query": [
+										{
+											"key": "traceId",
+											"value": "0b1687c8b2c0df7d9ebddaf998bea9df"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view error",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/traces/getByErrorTraceId?traceId=0b1687c8b2c0df7d9ebddaf998bea9df",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"traces",
+										"getByErrorTraceId"
+									],
+									"query": [
+										{
+											"key": "traceId",
+											"value": "0b1687c8b2c0df7d9ebddaf998bea9df"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "LOG",
+					"item": [
+						{
+							"name": "get all sortorder log",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/logs/getallLogdata-sortorder?endDate=2024-01-23&page=1&pageSize=10&serviceNameList=order-srv-1&serviceNameList=vendor-srv-1&serviceNameList=vendor-srv-2&serviceNameList=kafka-srv-5&serviceNameList=vendor-srv-4&serviceNameList=vendor-srv-3&sortOrder=error&startDate=2024-01-01",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"logs",
+										"getallLogdata-sortorder"
+									],
+									"query": [
+										{
+											"key": "endDate",
+											"value": "2024-01-23"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "pageSize",
+											"value": "10"
+										},
+										{
+											"key": "serviceNameList",
+											"value": "order-srv-1"
+										},
+										{
+											"key": "serviceNameList",
+											"value": "vendor-srv-1"
+										},
+										{
+											"key": "serviceNameList",
+											"value": "vendor-srv-2"
+										},
+										{
+											"key": "serviceNameList",
+											"value": "kafka-srv-5"
+										},
+										{
+											"key": "serviceNameList",
+											"value": "vendor-srv-4"
+										},
+										{
+											"key": "serviceNameList",
+											"value": "vendor-srv-3"
+										},
+										{
+											"key": "sortOrder",
+											"value": "error"
+										},
+										{
+											"key": "startDate",
+											"value": "2024-01-01"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "filter log",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "search log",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/logs/searchFunction?endDate=2024-01-23&keyword=init&page=1&pageSize=10&startDate=2024-01-01",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"logs",
+										"searchFunction"
+									],
+									"query": [
+										{
+											"key": "endDate",
+											"value": "2024-01-23"
+										},
+										{
+											"key": "keyword",
+											"value": "init"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "pageSize",
+											"value": "10"
+										},
+										{
+											"key": "startDate",
+											"value": "2024-01-01"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view trace",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/logs/findByTraceId?traceId=0b1687c8b2c0df7d9ebddaf998bea9df",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"logs",
+										"findByTraceId"
+									],
+									"query": [
+										{
+											"key": "traceId",
+											"value": "0b1687c8b2c0df7d9ebddaf998bea9df"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "METRIC",
+					"item": [
+						{
+							"name": "metric data",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/metrics/getByserviceNameAndMinutesAgo?from=2024-01-01&serviceName=vendor-srv-2&to=2024-01-23",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"metrics",
+										"getByserviceNameAndMinutesAgo"
+									],
+									"query": [
+										{
+											"key": "from",
+											"value": "2024-01-01"
+										},
+										{
+											"key": "serviceName",
+											"value": "vendor-srv-2"
+										},
+										{
+											"key": "to",
+											"value": "2024-01-23"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
